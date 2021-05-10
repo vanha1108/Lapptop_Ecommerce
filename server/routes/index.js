@@ -1,0 +1,31 @@
+const express = require("express")
+
+const accountRoute = require("./accountRoute")
+const categoryRoute = require("./categoryRoute")
+const userRoute = require("./userRoute")
+const orderRoute = require("./orderRoute")
+const productRoute = require("./productRoute")
+const cartRoute = require("./cartRoute")
+const chatRoute = require("./chatRoute")
+const keyRoute = require("./keyRoute")
+const profileRoute = require("./profileRoute")
+const dashboardRoute = require("./dashboardRoute")
+const guaranteeOrderRoute = require("./guaranteeOrderRoute")
+const customerGuaranteeOrderRoute = require("./customerGuaranteeOrderRoute")
+
+const router = express.Router()
+
+router.use("/v1/account", accountRoute)
+router.use("/v1/categories", categoryRoute)
+router.use("/v1/users", userRoute)
+router.use("/v1/orders", orderRoute)
+router.use("/v1/products", productRoute)
+router.use("/v1/cart", cartRoute)
+router.use("/v1/chat", chatRoute)
+router.use("/v1/keys", keyRoute)
+router.use("/v1/profile", profileRoute)
+router.use("/v1/dashboard", dashboardRoute)
+router.use("/v1/guaranteeorders", guaranteeOrderRoute)
+router.use("/v1/customerguaranteeorders", customerGuaranteeOrderRoute)
+
+module.exports = router

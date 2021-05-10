@@ -1,0 +1,228 @@
+// Here you can add other styles
+* {
+    font-size: 0.9rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover-opacity:hover {
+    opacity: 0.9;
+}
+
+.text-big {
+    font-size: 1.15rem
+}
+
+.text-small {
+    font-size: 0.85em;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.user-select-none {
+    user-select: none;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+th {
+    vertical-align: top !important;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.app-alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 60px;
+    padding-right: 20px;
+    max-width: 500px;
+    z-index: 99998;
+}
+
+.pagination-dropdown {
+    min-width: 80px;
+}
+.pagination-input {
+    width: 50px;
+    border: 1px solid #dee2e6;
+}
+
+.conversation-list {
+    border-right: 1px solid #dee2e6;
+}
+
+.chat-box-btn-container {
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+
+.chat-box-btn {
+    width: 40px;
+    height: 40px;
+}
+
+.conversation-list {
+    left: 50px;
+    transform: translateY(-30px);
+    width: 250px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    z-index: 99;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.conversation-item {
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.conversation-item:hover {
+    background-color: #eee;
+}
+
+#message-list {
+    max-height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 16px
+}
+
+.message {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 1px 0.5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 4px;
+    display: inline-block;
+    max-width: 70%;
+}
+
+.message-right {
+    background-color: #0a7cff;
+    color: #fff;
+}
+
+.message-left {
+    background-color: #eee;
+}
+
+.message-sender {
+    color: gray;
+    font-size: 0.85rem;
+    padding-right: 8px
+}
+
+.unread-conversation-count {
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f00;
+    color: #fff;
+    font-size: 0.7rem;
+    transform: translate(25%, -25%);
+}
+
+.input-file-label {
+    padding: 4px;
+    margin-bottom: 0;
+    border: 1px solid #20a8d8;
+    background-color: #20a8d8;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.input-file-label:hover {
+    border: 1px solid #1985ac;
+    background-color: #1b8eb7;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 8px;
+}
+
+.product-image-close {
+    right: 0;
+    top: 0;
+    translate: transform(50%, -50%);
+}
+
+.product-video-container {
+    max-height: 400px;
+    min-height: 200px;
+}
+
+.product-video {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.new-message-dot {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f00;
+}
